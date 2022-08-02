@@ -40,7 +40,7 @@ int main (void)
 	for (i = 1; i < MAXWORD; ++i){
 		printf("%5d - %5d : ", i, wl[i]);
 		if (wl[i] > 0){
-			if (len = wl[i] * MAXHIST / maxvalue <= 0){
+			if ((len = wl[i] * MAXHIST / maxvalue) <= 0){
 				len = 1;
 			}
 		} else {
