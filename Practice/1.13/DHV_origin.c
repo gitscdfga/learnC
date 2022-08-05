@@ -3,10 +3,10 @@
 #define MAXWORD 11
 #define IN 1
 #define OUT 0
-
+/* print a histogram with vertical */
 int main (void) 
 {
-	int n, nc, i, j, state;
+	int c, nc, i, j, state;
 	int ovflow;
 	int maxvalue;
 	int wl[MAXWORD];
@@ -19,7 +19,7 @@ int main (void)
 	}
 
 	while ((c = getchar()) != EOF) {
-		if (c == ' ' || c == '\t' c == '\n'){
+		if (c == ' ' || c == '\t' || c == '\n'){
 			state = OUT;
 			if (nc > 0){
 				++wl[nc];
@@ -50,11 +50,11 @@ int main (void)
 		}
 		putchar('\n');
 	}
-	for （i = 1; i < MAXWORD; ++i） {
+	for (i = 1; i < MAXWORD; ++i) {
 		printf(" %d ", i);
 	}
 	putchar('\n');
 
 	if (ovflow > 0)
-		print("There is %d words >= %d\n", ovflow, MAXWORD);
+		printf("There is %d words >= %d\n", ovflow, MAXWORD);
 }
