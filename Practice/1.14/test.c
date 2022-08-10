@@ -5,4 +5,6 @@ int main(void)
 	a = 'a';
 	z = 'z';
 	printf("a = %d ; z = %d\n", a, z);
+	putchar(97);
+	putchar('\n');
 }
