@@ -1,0 +1,2 @@
+print following table of Fahrenheit temperatures and their centigrade or Celsius equivalents.
+Rewrite the temperature conversion program of Section 1.2 to use a function for conversion.
